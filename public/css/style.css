@@ -1,0 +1,29 @@
+h1
+{
+    color:green;
+}
+img
+{
+    width: 250px;
+}
+body{
+    font-family: arial;
+    padding : 0 13px;
+    margin: auto;
+    color:rosybrown;
+}
+
+header{
+         background-color: yellow;
+         padding-top: 10px;
+         margin-top: auto;   
+}
+header a{
+    text-decoration: tomato;
+    padding-bottom: 50px;
+}
+button
+{
+    cursor: pointer;
+    color: seagreen;
+}
