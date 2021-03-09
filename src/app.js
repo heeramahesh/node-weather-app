@@ -9,6 +9,7 @@ const geocode=require('./util/geocode.js')
 const forecast=require('./util/forecast.js')
 const { request } = require('http')
 const app=express()
+const port=process.env.PORT || 3000
 app.set('view engine', 'hbs')
 app.set('views',viewsPath)
 app.use(express.static(path.join(__dirname,'../public')))
@@ -69,9 +70,9 @@ app.get('/weather',(req,res)=>
    
    // res.send({location:'boston',temperature:35,address:req.query.address})
 })
-app.listen(3000,()=>
+app.listen(port,()=>
 {
-    console.log('server is up and running')
+    console.log('server is up and running' + port)
 })
 app.get('/product',(req,res)=>{
     if(!req.query.search)
